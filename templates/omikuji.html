@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- ここは日本語対応に -->
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omikuji</title>
+</head>
+<body>
+    <!-- おみくじだよ -->
+
+    <p>今日の運勢は ... {{ result }} </p>
+         <!-- もしresult変数が大吉だった時はやったねの表示 -->
+        {% if result == "大吉!!" %}
+             <p>やったね！</p>
+        {% elif result == "吉" %}
+            <p>まあまあ</p>
+        {% elif result == "凶..." %}
+            <p>残念</p>
+         {% endif %}
+
+
+
+</body>
+</html>
